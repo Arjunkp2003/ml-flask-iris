@@ -1,5 +1,5 @@
 import sqlite3
-from config import DATABASE
+from ..config import DATABASE     # go up one level (from db → src), then import config
 
 def get_connection():
     conn = sqlite3.connect(DATABASE)
